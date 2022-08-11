@@ -48,8 +48,6 @@ const TextInput = () => {
     }, 500);
   };
 
-  console.log(userInput);
-
   return (
     <Box
       component={motion.div}

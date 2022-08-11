@@ -17,7 +17,7 @@ const formsectionvariant = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 1.2,
+      delay: 2,
       duration: 1,
       type: "spring",
       bounce: 0.7,
@@ -32,7 +32,6 @@ const FormSection = () => {
 
   const handleClick = (noti: any) => {
     addNotification(noti);
-    console.log("clicked");
   };
 
   return (
