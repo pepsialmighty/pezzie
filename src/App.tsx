@@ -1,11 +1,19 @@
 import React from "react";
-import logo from "./logo.svg";
+
 import "./App.css";
+import NotificationSection from "./components/NotificationSection";
+import FormSection from "./components/FormSection";
+import NotiProvider from "./context/NotiContext";
+import Title from "./components/Title";
 
 function App() {
   return (
     <div className="App">
-      <h1>hello</h1>
+      <NotiProvider>
+        <Title />
+        <NotificationSection />
+        <FormSection />
+      </NotiProvider>
     </div>
   );
 }
